@@ -40,13 +40,8 @@ if not data.raw["splitter"]["express-splitter"].next_upgrade then
 end
 
 -- stack-inserter
-if not data.raw["inserter"]["stack-inserter"].next_upgrade then
-    data.raw["inserter"]["stack-inserter"].next_upgrade = "stack-inserter-mk2"
-end
-
--- stack-filter-inserter
-if not data.raw["inserter"]["stack-filter-inserter"].next_upgrade then
-    data.raw["inserter"]["stack-filter-inserter"].next_upgrade = "stack-filter-inserter-mk2"
+if not data.raw["inserter"]["bulk-inserter"].next_upgrade then
+    data.raw["inserter"]["bulk-inserter"].next_upgrade = "stack-inserter-mk2"
 end
 
 -- fast-inserter

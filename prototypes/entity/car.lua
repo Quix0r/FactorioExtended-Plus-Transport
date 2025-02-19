@@ -7,7 +7,7 @@ data:extend(
             name = "vehicle-rocket-launcher",
             icon = "__base__/graphics/icons/rocket-launcher.png",
             icon_size = 64,
-            flags = {"hidden"},
+            hidden = true,
             subgroup = "gun",
             order = "d[rocket-launcher]",
             attack_parameters = {
@@ -44,7 +44,6 @@ mk2.minable.result = mk2.name
 mk2.guns = {"vehicle-machine-gun", "vehicle-rocket-launcher"}
 mk2.animation.tint = Constant.green_tint
 mk2.animation.layers[1].tint = Constant.green_tint
-mk2.animation.layers[1].hr_version.tint = Constant.green_tint
 
 local mk3 = table.deepcopy(data.raw["car"]["car"])
 mk3.name = "car-mk3"
@@ -58,6 +57,5 @@ mk3.minable.result = mk3.name
 mk3.guns = {"vehicle-machine-gun", "vehicle-rocket-launcher"}
 mk3.animation.tint = Constant.blue_tint
 mk3.animation.layers[1].tint = Constant.blue_tint
-mk3.animation.layers[1].hr_version.tint = Constant.blue_tint
 
 data:extend({mk2, mk3})

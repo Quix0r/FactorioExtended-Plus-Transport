@@ -19,8 +19,7 @@ mk2.braking_force = 15
 mk2.air_resistance = 0.005
 mk2.color = Constant.green_tint
 
-mk2.pictures.layers[1].tint = mk2.color
-mk2.pictures.layers[1].hr_version.tint = mk2.color
+mk2.pictures.rotated.layers[1].tint = mk2.color
 
 local mk3 = table.deepcopy(data.raw["locomotive"]["locomotive"])
 mk3.name = "locomotive-mk3"
@@ -33,7 +32,6 @@ mk3.braking_force = 20
 mk3.air_resistance = 0.0025
 mk3.color = Constant.blue_tint
 
-mk3.pictures.layers[1].tint = mk3.color
-mk3.pictures.layers[1].hr_version.tint = mk3.color
+mk3.pictures.rotated.layers[1].tint = mk3.color
 
 data:extend({mk2, mk3})

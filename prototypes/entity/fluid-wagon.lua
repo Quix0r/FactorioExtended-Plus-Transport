@@ -15,16 +15,11 @@ mk2.max_speed = 1.9
 mk2.capacity = 75000
 mk2.color = Constant.green_tint
 
-mk2.pictures.layers[1].tint = mk2.color
-mk2.pictures.layers[1].filenames = {}
+mk2.pictures.rotated.layers[1].tint = mk2.color
+mk2.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    table.insert(mk2.pictures.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk2.name .. "/fluid-wagon-" .. i .. ".png")
-end
-
-mk2.pictures.layers[1].hr_version.tint = mk2.color
-mk2.pictures.layers[1].hr_version.filenames = {}
-for i = 1, 8 do
-    table.insert(mk2.pictures.layers[1].hr_version.filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO: table.insert(mk2.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    table.insert(mk2.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 
 local mk3 = table.deepcopy(data.raw["fluid-wagon"]["fluid-wagon"])
@@ -36,16 +31,11 @@ mk3.max_speed = 2.3
 mk3.capacity = 175000
 mk3.color = Constant.blue_tint
 
-mk3.pictures.layers[1].tint = mk3.color
-mk3.pictures.layers[1].filenames = {}
+mk3.pictures.rotated.layers[1].tint = mk3.color
+mk3.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    table.insert(mk3.pictures.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk3.name .. "/fluid-wagon-" .. i .. ".png")
-end
-
-mk3.pictures.layers[1].hr_version.tint = mk3.color
-mk3.pictures.layers[1].hr_version.filenames = {}
-for i = 1, 8 do
-    table.insert(mk3.pictures.layers[1].hr_version.filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO table.insert(mk3.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    table.insert(mk3.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 
 data:extend({mk2, mk3})

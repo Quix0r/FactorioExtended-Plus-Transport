@@ -7,11 +7,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"fast-inserter", 1},
-      {"advanced-circuit", 5},
-      {"speed-module", 2}
+      {type="item", name="fast-inserter", amount=1},
+      {type="item", name="advanced-circuit", amount=5},
+      {type="item", name="speed-module", amount=2}
     },
-    result = "fast-inserter-mk2"
+    results = {{type="item", name="fast-inserter-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -20,11 +20,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"fast-inserter-mk2", 1},
-      {"processing-unit", 5},
-      {"speed-module-2", 2}
+      {type="item", name="fast-inserter-mk2", amount=1},
+      {type="item", name="processing-unit", amount=5},
+      {type="item", name="speed-module-2", amount=2}
     },
-    result = "fast-inserter-mk3"
+    results = {{type="item", name="fast-inserter-mk3", amount=1}}
   },
   {
     type = "recipe",
@@ -32,11 +32,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"fast-inserter", 1},
-      {"long-handed-inserter", 1},
-      {"steel-plate", 2}
+      {type="item", name="fast-inserter", amount=1},
+      {type="item", name="long-handed-inserter", amount=1},
+      {type="item", name="steel-plate", amount=2}
     },
-    result = "fast-long-handed-inserter"
+    results = {{type="item", name="fast-long-handed-inserter", amount=1}}
   },
   {
     type = "recipe",
@@ -44,11 +44,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"fast-long-handed-inserter", 1},
-      {"filter-inserter", 1},
-      {"steel-plate", 2}
+      {type="item", name="fast-long-handed-inserter", amount=1},
+      {type="item", name="fast-inserter", amount=1},
+      {type="item", name="steel-plate", amount=2}
     },
-    result = "filter-long-handed-inserter"
+    results = {{type="item", name="filter-long-handed-inserter", amount=1}}
   },
   {
     type = "recipe",
@@ -56,23 +56,23 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"stack-inserter", 2},
-      {"processing-unit", 15},
-      {"speed-module", 1}
+      {type="item", name="bulk-inserter", amount=2},
+      {type="item", name="processing-unit", amount=15},
+      {type="item", name="speed-module", amount=1}
     },
-    result = "stack-inserter-mk2",
+    results = {{type="item", name="stack-inserter-mk2", amount=1}}
   },
   {
     type = "recipe",
-    name = "stack-filter-inserter-mk2",
+    name = "stack-inserter-mk2",
     enabled = false,
     ingredients =
     {
-      {"stack-filter-inserter", 2},
-      {"processing-unit", 15},
-      {"speed-module", 1}
+      {type="item", name="bulk-inserter", amount=2},
+      {type="item", name="processing-unit", amount=15},
+      {type="item", name="speed-module", amount=1}
     },
-    result = "stack-filter-inserter-mk2",
+    results = {{type="item", name="stack-inserter-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -80,9 +80,9 @@ data:extend(
     enabled = false,
     ingredients = 
     {
-      {"titanium-alloy", 1}
+      {type="item", name="titanium-alloy", amount=1}
     },
-    result = "pipe-mk2"
+    results = {{type="item", name="pipe-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -90,11 +90,10 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"pipe-mk2", 20},
-      {"titanium-alloy", 10}
+      {type="item", name="pipe-mk2", amount=20},
+      {type="item", name="titanium-alloy", amount=10}
     },
-    result_count = 2,
-    result = "pipe-to-ground-mk2"
+    results = {{type="item", name="pipe-to-ground-mk2", amount=2}}
   },
   {
     type = "recipe",
@@ -103,10 +102,10 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"storage-tank", 4},
-      {"titanium-alloy", 15}
+      {type="item", name="storage-tank", amount=4},
+      {type="item", name="titanium-alloy", amount=15}
     },
-    result= "storage-tank-mk2"
+    results = {{type="item", name="storage-tank-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -115,13 +114,13 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"pump", 4},
-      {"advanced-circuit", 4},
-      {"titanium-alloy", 5},
-      {"pipe-mk2", 4},
-      {"pollution-filter", 1}
+      {type="item", name="pump", amount=4},
+      {type="item", name="advanced-circuit", amount=4},
+      {type="item", name="titanium-alloy", amount=5},
+      {type="item", name="pipe-mk2", amount=4},
+      {type="item", name="pollution-filter", amount=1}
     },
-    result= "pump-mk2"
+    results = {{type="item", name="pump-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -131,11 +130,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 5},
-      {"express-transport-belt", 1},
+      {type="item", name="iron-gear-wheel", amount=5},
+      {type="item", name="express-transport-belt", amount=1},
       {type="fluid", name="lubricant", amount=2}
     },
-    result = "rapid-transport-belt-mk1"
+    results = {{type="item", name="rapid-transport-belt-mk1", amount=1}}
   },
   {
     type = "recipe",
@@ -145,11 +144,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 5},
-      {"rapid-transport-belt-mk1", 1},
+      {type="item", name="iron-gear-wheel", amount=5},
+      {type="item", name="rapid-transport-belt-mk1", amount=1},
       {type="fluid", name="lubricant", amount=2}
     },
-    result = "rapid-transport-belt-mk2"
+    results = {{type="item", name="rapid-transport-belt-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -159,12 +158,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 40},
-      {"express-underground-belt", 4},
+      {type="item", name="iron-gear-wheel", amount=40},
+      {type="item", name="express-underground-belt", amount=4},
       {type="fluid", name="lubricant", amount=2}
     },
-    result_count = 2,
-    result = "rapid-transport-belt-to-ground-mk1"
+    results = {{type="item", name="rapid-transport-belt-to-ground-mk1", amount=2}}
   },
   {
     type = "recipe",
@@ -174,15 +172,12 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"iron-gear-wheel", 40},
-      {"rapid-transport-belt-to-ground-mk1", 4},
+      {type="item", name="iron-gear-wheel", amount=40},
+      {type="item", name="rapid-transport-belt-to-ground-mk1", amount=4},
       {type="fluid", name="lubricant", amount=4}
     },
-    result_count = 2,
-    result = "rapid-transport-belt-to-ground-mk2"
+    results = {{type="item", name="rapid-transport-belt-to-ground-mk2", amount=2}}
   },
-  
-  
   {
     type = "recipe",
     energy_required = 0.5,
@@ -192,12 +187,12 @@ data:extend(
     energy_required = 2,
     ingredients =
     {
-      {"express-splitter", 1},
-      {"iron-gear-wheel", 10},
-      {"advanced-circuit", 10},
+      {type="item", name="express-splitter", amount=1},
+      {type="item", name="iron-gear-wheel", amount=10},
+      {type="item", name="advanced-circuit", amount=10},
       {type="fluid", name="lubricant", amount=4}
     },
-    result = "rapid-splitter-mk1"
+    results = {{type="item", name="rapid-splitter-mk1", amount=1}}
   },
   {
     type = "recipe",
@@ -208,11 +203,11 @@ data:extend(
     energy_required = 2,
     ingredients =
     {
-      {"rapid-splitter-mk1", 1},
-      {"iron-gear-wheel", 10},
-      {"advanced-circuit", 10},
+      {type="item", name="rapid-splitter-mk1", amount=1},
+      {type="item", name="iron-gear-wheel", amount=10},
+      {type="item", name="advanced-circuit", amount=10},
       {type="fluid", name="lubricant", amount=8}
     },
-    result = "rapid-splitter-mk2"
+    results = {{type="item", name="rapid-splitter-mk2", amount=1}}
   }
 })

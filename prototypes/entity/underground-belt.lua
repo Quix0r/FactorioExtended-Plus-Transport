@@ -17,14 +17,10 @@ mk4.speed = 0.125
 mk4.max_distance = 11
 mk4.belt_animation_set = Belt.rapid_mk1_belt_animation_set
 
-mk4.structure.direction_in.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_in.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_out.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_out.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_in_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_in_side_loading.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_out_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/rapid-underground-belt-structure-mk1.png"
-mk4.structure.direction_out_side_loading.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
+mk4.structure.direction_in.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
+mk4.structure.direction_out.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
+mk4.structure.direction_in_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
+mk4.structure.direction_out_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-underground-belt-structure-mk1.png"
 
 local mk5 = table.deepcopy(data.raw["underground-belt"]["underground-belt"])
 mk5.name = "rapid-transport-belt-to-ground-mk2"
@@ -38,13 +34,9 @@ mk5.speed = 0.15625
 mk5.max_distance = 22
 mk5.belt_animation_set = Belt.rapid_mk2_belt_animation_set
 
-mk5.structure.direction_in.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_in.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_out.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_out.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_in_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_in_side_loading.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_out_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/rapid-underground-belt-structure-mk2.png"
-mk5.structure.direction_out_side_loading.sheet.hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
+mk5.structure.direction_in.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
+mk5.structure.direction_out.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
+mk5.structure.direction_in_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
+mk5.structure.direction_out_side_loading.sheet.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-underground-belt-structure-mk2.png"
 
 data:extend({mk4, mk5})

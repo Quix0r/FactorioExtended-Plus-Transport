@@ -33,7 +33,6 @@ local items = {
     {source = "inserter", name = "fast-long-handed-inserter", subgroup = "fb-transport-inserters", order = "b[fast-long-handed-inserter]-a", icon_name = "fast-long-handed-inserter.png", itype = "item"},
     {source = "inserter", name = "filter-long-handed-inserter", subgroup = "fb-transport-inserters", order = "b[smart-long-handed-inserter]-b", icon_name = "smart-long-handed-inserter.png", itype = "item"},
     {source = "inserter", name = "stack-inserter-mk2", subgroup = "fb-transport-inserters", order = "c-a", icon_name = "stack-inserter-mk2.png", itype = "item"},
-    {source = "inserter", name = "stack-filter-inserter-mk2", subgroup = "fb-transport-inserters", order = "c-b", icon_name = "stack-filter-inserter-mk2.png", itype = "item"},
     --
     {source = "pipe", name = "pipe-mk2", subgroup = "fb-fluids", order = "a-a", icon_name = "pipe-mk2.png", itype = "item"},
     {source = "pipe-to-ground", name = "pipe-to-ground-mk2", subgroup = "fb-fluids", order = "a-c", icon_name = "pipe-to-ground-mk2.png", itype = "item"},

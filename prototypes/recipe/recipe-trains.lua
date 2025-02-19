@@ -6,12 +6,12 @@ data:extend(
             name = "cargo-wagon-mk2",
             enabled = false,
             ingredients = {
-                {"cargo-wagon", 1},
-                {"steel-plate", 100},
-                {"iron-plate", 50},
-                {"advanced-circuit", 1}
+                {type="item", name="cargo-wagon", amount=1},
+                {type="item", name="steel-plate", amount=100},
+                {type="item", name="iron-plate", amount=50},
+                {type="item", name="advanced-circuit", amount=1}
             },
-            result = "cargo-wagon-mk2"
+            results = {{type="item", name="cargo-wagon-mk2", amount=1}}
         },
         {
             type = "recipe",
@@ -19,12 +19,12 @@ data:extend(
             name = "cargo-wagon-mk3",
             enabled = false,
             ingredients = {
-                {"cargo-wagon-mk2", 2},
-                {"steel-plate", 200},
-                {"titanium-alloy", 50},
-                {"processing-unit", 1}
+                {type="item", name="cargo-wagon-mk2", amount=2},
+                {type="item", name="steel-plate", amount=200},
+                {type="item", name="titanium-alloy", amount=50},
+                {type="item", name="processing-unit", amount=1}
             },
-            result = "cargo-wagon-mk3"
+            results = {{type="item", name="cargo-wagon-mk3", amount=1}}
         },
         {
             type = "recipe",
@@ -32,12 +32,12 @@ data:extend(
             energy_required = 4,
             enabled = false,
             ingredients = {
-                {"locomotive", 1},
-                {"engine-unit", 20},
-                {"advanced-circuit", 10},
-                {"steel-plate", 50}
+                {type="item", name="locomotive", amount=1},
+                {type="item", name="engine-unit", amount=20},
+                {type="item", name="advanced-circuit", amount=10},
+                {type="item", name="steel-plate", amount=50}
             },
-            result = "locomotive-mk2"
+            results = {{type="item", name="locomotive-mk2", amount=1}}
         },
         {
             type = "recipe",
@@ -45,12 +45,12 @@ data:extend(
             energy_required = 4,
             enabled = false,
             ingredients = {
-                {"locomotive-mk2", 1},
-                {"electric-engine-unit", 20},
-                {"processing-unit", 10},
-                {"titanium-alloy", 50}
+                {type="item", name="locomotive-mk2", amount=1},
+                {type="item", name="electric-engine-unit", amount=20},
+                {type="item", name="processing-unit", amount=10},
+                {type="item", name="titanium-alloy", amount=50}
             },
-            result = "locomotive-mk3"
+            results = {{type="item", name="locomotive-mk3", amount=1}}
         },
         {
             type = "recipe",
@@ -58,11 +58,11 @@ data:extend(
             enabled = false,
             energy_required = 1.5,
             ingredients = {
-                {"steel-plate", 32},
-                {"pipe-mk2", 8},
-                {"fluid-wagon", 3}
+                {type="item", name="steel-plate", amount=32},
+                {type="item", name="pipe-mk2", amount=8},
+                {type="item", name="fluid-wagon", amount=3}
             },
-            result = "fluid-wagon-mk2"
+            results = {{type="item", name="fluid-wagon-mk2", amount=1}}
         },
         {
             type = "recipe",
@@ -70,11 +70,11 @@ data:extend(
             enabled = false,
             energy_required = 1.5,
             ingredients = {
-                {"titanium-alloy", 32},
-                {"pipe-mk2", 16},
-                {"fluid-wagon-mk2", 3}
+                {type="item", name="titanium-alloy", amount=32},
+                {type="item", name="pipe-mk2", amount=16},
+                {type="item", name="fluid-wagon-mk2", amount=3}
             },
-            result = "fluid-wagon-mk3"
+            results = {{type="item", name="fluid-wagon-mk3", amount=1}}
         }
     }
 )

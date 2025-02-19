@@ -15,10 +15,10 @@ mk2.energy_usage = "60kW"
 mk2.pumping_speed = 400
 mk2.icons = {{icon = mk2.icon, icon_mipmaps = 4, icon_size = 64, tint = Constant.green_tint}}
 
-if mk2.fluid_box.base then
-    mk2.fluid_box.base = mk2.fluid_box.base * 2
+if mk2.fluid_box.volume then
+    mk2.fluid_box.volume = mk2.fluid_box.volume * 2
 else
-    mk2.fluid_box.base = 2
+    mk2.fluid_box.volume = 2
 end
 if mk2.fluid_box.height then
     mk2.fluid_box.height = mk2.fluid_box.height * 2
@@ -27,10 +27,8 @@ else
 end
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk2.animations[direction].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pump/pump-" .. direction .. ".png"
-    mk2.animations[direction].hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pump/hr-pump-" .. direction .. ".png"
-    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/pipe-cover-" .. direction .. ".png"
-    mk2.fluid_box.pipe_covers[direction].layers[1].hr_version.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
+    mk2.animations[direction].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pump/hr-pump-" .. direction .. ".png"
+    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
 end
 
 data:extend({mk2})

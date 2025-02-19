@@ -49,7 +49,7 @@ data:extend(
             name = "logistics-5",
             icon = "__FactorioExtended-Plus-Transport__/graphics/technology/logistics-5.png",
             icon_size = 256,
-            prerequisites = {"logistics-4", "speed-module-2", "advanced-electronics-2"},
+            prerequisites = {"logistics-4", "speed-module-2", "processing-unit"},
             effects = {
                 {
                     type = "unlock-recipe",
@@ -88,7 +88,7 @@ data:extend(
         {
             type = "technology",
             name = "stack-inserter-2",
-            icon = "__base__/graphics/technology/stack-inserter.png",
+            icon = "__base__/graphics/technology/bulk-inserter.png",
             icon_size = 256,
             effects = {
                 {
@@ -97,10 +97,10 @@ data:extend(
                 },
                 {
                     type = "unlock-recipe",
-                    recipe = "stack-filter-inserter-mk2"
+                    recipe = "stack-inserter-mk2"
                 }
             },
-            prerequisites = {"stack-inserter", "titanium-processing", "speed-module"},
+            prerequisites = {"bulk-inserter", "titanium-processing", "speed-module"},
             unit = {
                 count = 200,
                 ingredients = {
@@ -118,7 +118,7 @@ data:extend(
             name = "railway-2",
             icon_size = 256,
             icon = "__base__/graphics/technology/railway.png",
-            prerequisites = {"automated-rail-transportation", "advanced-electronics", "titanium-processing"},
+            prerequisites = {"automated-rail-transportation", "advanced-circuit", "titanium-processing"},
             effects = {
                 {
                     type = "unlock-recipe",
@@ -150,7 +150,7 @@ data:extend(
             name = "railway-3",
             icon_size = 256,
             icon = "__base__/graphics/technology/railway.png",
-            prerequisites = {"railway-2", "advanced-electronics-2"},
+            prerequisites = {"railway-2", "processing-unit"},
             effects = {
                 {
                     type = "unlock-recipe",
@@ -245,7 +245,7 @@ data:extend(
             name = "automobilism-3",
             icon_size = 256,
             icons = {{icon = "__base__/graphics/technology/automobilism.png", tint = blue_tint}},
-            prerequisites = {"automobilism-2", "titanium-processing", "advanced-electronics-2"},
+            prerequisites = {"automobilism-2", "titanium-processing", "processing-unit"},
             effects = {
                 {
                     type = "unlock-recipe",
@@ -292,7 +292,7 @@ data:extend(
             name = "tanks-3",
             icon_size = 256,
             icons = {{icon = "__base__/graphics/technology/tank.png", tint = blue_tint}},
-            prerequisites = {"tanks-2", "titanium-processing", "advanced-electronics-2"},
+            prerequisites = {"tanks-2", "titanium-processing", "processing-unit"},
             effects = {
                 {
                     type = "unlock-recipe",

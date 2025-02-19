@@ -1,4 +1,26 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 19-02-2025
+  Fixes:
+    - bumped version to 2.0.32
+    - needs to be pictures.rotated.layers
+    - base_area was renamed to volume
+    - base was renamed to volume
+    - up, down, left, right -> north, south, west, east
+    - there are no longer filter inserters, all can filter now
+    - added JSON migration for renaming filter inserters to normal inserters
+    - changed "result" (simple string) to "results" (table)
+    - there is no support for short-hand arrays {"item-name", n}, you need to always use full table
+    - there is no flag "hidden", it is a boolean key now
+    - KJ (capitalized K) isn't allowed anymore, needs to be kJ instead
+    - advanced-electronics -> advanced-circuit
+    - advanced-electronics-2 -> processing-unit
+    - stacker-inserter -> bulk-inserter
+    - storage-tank-mk2 had only 1k (25k base storage tank), now set to 50k
+  Won't fix:
+    - animation graphics of fluid-wagon mk2/3 are now generic, it has changed from 8 to 4 images
+      as 2 have been merged and 1 pixel between and below them added
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
 Date: 25-10-2024
   Changes:

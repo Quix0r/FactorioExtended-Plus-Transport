@@ -7,12 +7,12 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"car", 2},
-      {"titanium-alloy", 20},
-      {"electric-engine-unit", 20},
-      {"advanced-circuit", 2}
+      {type="item", name="car", amount=2},
+      {type="item", name="titanium-alloy", amount=20},
+      {type="item", name="electric-engine-unit", amount=20},
+      {type="item", name="advanced-circuit", amount=2}
     },
-    result = "car-mk2"
+    results = {{type="item", name="car-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -21,12 +21,12 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"car-mk2", 2},
-      {"titanium-alloy", 50},
-      {"electric-engine-unit", 50},
-      {"processing-unit", 2}
+      {type="item", name="car-mk2", amount=2},
+      {type="item", name="titanium-alloy", amount=50},
+      {type="item", name="electric-engine-unit", amount=50},
+      {type="item", name="processing-unit", amount=2}
     },
-    result = "car-mk3"
+    results = {{type="item", name="car-mk3", amount=1}}
   },
   {
     type = "recipe",
@@ -35,12 +35,12 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"tank", 2},
-      {"titanium-alloy", 20},
-      {"electric-engine-unit", 20},
-      {"advanced-circuit", 10},
+      {type="item", name="tank", amount=2},
+      {type="item", name="titanium-alloy", amount=20},
+      {type="item", name="electric-engine-unit", amount=20},
+      {type="item", name="advanced-circuit", amount=10},
     },
-    result = "tank-mk2"
+    results = {{type="item", name="tank-mk2", amount=1}}
   },
   {
     type = "recipe",
@@ -49,12 +49,11 @@ data:extend(
     enabled = false,
     ingredients =
     {
-      {"tank-mk2", 2},
-      {"titanium-alloy", 50},
-      {"electric-engine-unit", 50},
-      {"processing-unit", 10},
+      {type="item", name="tank-mk2", amount=2},
+      {type="item", name="titanium-alloy", amount=50},
+      {type="item", name="electric-engine-unit", amount=50},
+      {type="item", name="processing-unit", amount=10},
     },
-    result = "tank-mk3"
+    results = {{type="item", name="tank-mk3", amount=1}}
   },
-  
 })
