@@ -1,16 +1,14 @@
 {
     "name": "FactorioExtended-Plus-Transport",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "factorio_version": "2.0",
-    "date": "25-10-2024",
     "title": "FactorioExtended Plus-Transport",
     "author": "roland77, rubesaca forked from jimmyjon711 (Original Author: Nath Gamer)",
     "contributers": "Cinjun, rgfirefly24, billbo99, Domanaik",
-    "homepage": "",
     "description": "",
     "dependencies": [
         "base >= 2.0.32",
-        "FactorioExtended-Plus-Core >= 2.0.1",
+        "FactorioExtended-Plus-Core >= 2.0.2",
         "(?)LoaderRedux >= 2.0.0"
     ]
 }
