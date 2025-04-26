@@ -6,7 +6,7 @@
 
 local mk4 = table.deepcopy(data.raw["splitter"]["splitter"])
 mk4.name = "rapid-splitter-mk1"
-mk4.icon = "__FactorioExtended-Plus-Transport__/graphics/icons/" .. mk4.name .. ".png"
+mk4.icon = "__FactorioExtended-Plus-Assets__/transport/icons/" .. mk4.name .. ".png"
 mk4.icon_size = 64
 mk4.icon_mipmaps = 4
 mk4.minable.result = mk4.name
@@ -18,14 +18,14 @@ mk4.speed = 0.125
 mk4.structure_patch = nil
 mk4.belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/rapid-transport-belt-mk1.png",
+        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/rapid-transport-belt-mk1.png",
         priority = "extra-high",
         width = 64,
         height = 64,
         frame_count = 32,
         direction_count = 20,
         hr_version = {
-            filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
+            filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
             priority = "extra-high",
             width = 128,
             height = 128,
@@ -37,7 +37,7 @@ mk4.belt_animation_set = {
 }
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk4.structure[direction].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk1/hr-rapid-splitter-" .. direction .. "-mk1.png"
+    mk4.structure[direction].filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/hr-rapid-splitter-" .. direction .. "-mk1.png"
 end
 
 -- This will need to be changed if we move to top/bottom graphics like they have in the 0.17/0.18 base game graphics
@@ -59,7 +59,7 @@ mk4.structure.west.shift = util.by_pixel(6, -4)
 
 local mk5 = table.deepcopy(data.raw["splitter"]["splitter"])
 mk5.name = "rapid-splitter-mk2"
-mk5.icon = "__FactorioExtended-Plus-Transport__/graphics/icons/" .. mk5.name .. ".png"
+mk5.icon = "__FactorioExtended-Plus-Assets__/transport/icons/" .. mk5.name .. ".png"
 mk5.icon_size = 64
 mk5.icon_mipmaps = 4
 mk5.minable.result = mk5.name
@@ -71,14 +71,14 @@ mk5.speed = 0.15625
 mk5.structure_patch = nil
 mk5.belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/rapid-transport-belt-mk2.png",
+        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/rapid-transport-belt-mk2.png",
         priority = "extra-high",
         width = 64,
         height = 64,
         frame_count = 32,
         direction_count = 20,
         hr_version = {
-            filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
+            filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
             priority = "extra-high",
             width = 128,
             height = 128,
@@ -90,7 +90,7 @@ mk5.belt_animation_set = {
 }
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk5.structure[direction].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/rapid-transport-mk2/hr-rapid-splitter-" .. direction .. "-mk2.png"
+    mk5.structure[direction].filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/hr-rapid-splitter-" .. direction .. "-mk2.png"
 end
 
 -- This will need to be changed if we move to top/bottom graphics like they have in the 0.17/0.18 base game graphics

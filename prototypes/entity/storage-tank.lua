@@ -10,9 +10,9 @@ mk2.max_health = 2000
 mk2.fluid_box.volume = 50000
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
+    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
 end
 
-mk2.pictures.picture.sheets[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/storage-tank/hr-storage-tank.png"
+mk2.pictures.picture.sheets[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/storage-tank/hr-storage-tank.png"
 
 data:extend({mk2})

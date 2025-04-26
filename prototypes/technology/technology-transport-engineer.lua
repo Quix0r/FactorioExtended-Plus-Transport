@@ -6,7 +6,7 @@ data:extend(
         {
             type = "technology",
             name = "logistics-4",
-            icon = "__FactorioExtended-Plus-Transport__/graphics/technology/logistics-4.png",
+            icon = "__FactorioExtended-Plus-Assets__/transport/technology/logistics-4.png",
             icon_size = 256,
             prerequisites = {"logistics-3", "titanium-processing"},
             effects = {
@@ -47,7 +47,7 @@ data:extend(
         {
             type = "technology",
             name = "logistics-5",
-            icon = "__FactorioExtended-Plus-Transport__/graphics/technology/logistics-5.png",
+            icon = "__FactorioExtended-Plus-Assets__/transport/technology/logistics-5.png",
             icon_size = 256,
             prerequisites = {"logistics-4", "speed-module-2", "processing-unit"},
             effects = {

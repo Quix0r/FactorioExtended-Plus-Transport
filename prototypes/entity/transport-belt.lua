@@ -6,7 +6,7 @@ local Belt = require("prototypes.entity.transport-belt-pictures")
 --
 local mk4 = table.deepcopy(data.raw["transport-belt"]["transport-belt"])
 mk4.name = "rapid-transport-belt-mk1"
-mk4.icon = "__FactorioExtended-Plus-Transport__/graphics/icons/" .. mk4.name .. ".png"
+mk4.icon = "__FactorioExtended-Plus-Assets__/transport/icons/" .. mk4.name .. ".png"
 mk4.icon_size = 64
 mk4.icon_mipmaps = 4
 mk4.minable.result = mk4.name
@@ -18,7 +18,7 @@ mk4.belt_animation_set = Belt.rapid_mk1_belt_animation_set
 local mk5 = table.deepcopy(data.raw["transport-belt"]["transport-belt"])
 mk5.name = "rapid-transport-belt-mk2"
 mk5.next_upgrade = nil
-mk5.icon = "__FactorioExtended-Plus-Transport__/graphics/icons/" .. mk5.name .. ".png"
+mk5.icon = "__FactorioExtended-Plus-Assets__/transport/icons/" .. mk5.name .. ".png"
 mk5.icon_size = 64
 mk5.icon_mipmaps = 4
 mk5.minable.result = mk5.name

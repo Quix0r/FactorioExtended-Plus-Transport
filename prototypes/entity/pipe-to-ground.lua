@@ -23,12 +23,12 @@ else
 end
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
+    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
 end
 
-mk2.pictures.north.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-up.png"
-mk2.pictures.south.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-down.png"
-mk2.pictures.west.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-left.png"
-mk2.pictures.east.filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-to-ground/hr-pipe-to-ground-right.png"
+mk2.pictures.north.filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-to-ground/hr-pipe-to-ground-up.png"
+mk2.pictures.south.filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-to-ground/hr-pipe-to-ground-down.png"
+mk2.pictures.west.filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-to-ground/hr-pipe-to-ground-left.png"
+mk2.pictures.east.filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-to-ground/hr-pipe-to-ground-right.png"
 
 data:extend({mk2})

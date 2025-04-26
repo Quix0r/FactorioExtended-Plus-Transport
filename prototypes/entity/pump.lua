@@ -27,8 +27,8 @@ else
 end
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk2.animations[direction].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pump/hr-pump-" .. direction .. ".png"
-    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Transport__/graphics/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
+    mk2.animations[direction].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pump/hr-pump-" .. direction .. ".png"
+    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
 end
 
 data:extend({mk2})

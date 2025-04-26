@@ -18,7 +18,7 @@ mk2.color = Constant.green_tint
 mk2.pictures.rotated.layers[1].tint = mk2.color
 mk2.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    -- @TODO: table.insert(mk2.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO: table.insert(mk2.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets__/transport/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
     table.insert(mk2.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 
@@ -34,7 +34,7 @@ mk3.color = Constant.blue_tint
 mk3.pictures.rotated.layers[1].tint = mk3.color
 mk3.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    -- @TODO table.insert(mk3.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Transport__/graphics/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO table.insert(mk3.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets__/transport/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
     table.insert(mk3.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 

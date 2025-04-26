@@ -5,7 +5,7 @@ local function CloneWithTint(source, name, subgroup, order, tint, icon_name, ity
     item.name = name
     item.place_result = item.name
     if icon_name then
-        item.icon = string.format("__FactorioExtended-Plus-Transport__/graphics/icons/%s", icon_name)
+        item.icon = string.format("__FactorioExtended-Plus-Assets__/transport/icons/%s", icon_name)
     end
     item.icons = {{icon = item.icon, icon_mipmaps = 4, icon_size = 64, tint = tint}}
     item.subgroup = subgroup
