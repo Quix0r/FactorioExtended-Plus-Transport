@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 12-05-2025
+  Changes:
+    - removed hr_version as all graphics are HR now
+    - bumped dependency due to some incompatible changes 42 -> 47
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 26-04-2025
   Changes:

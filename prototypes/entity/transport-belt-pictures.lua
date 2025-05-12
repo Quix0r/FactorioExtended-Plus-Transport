@@ -2,21 +2,13 @@ local Belt = {}
 
 Belt.rapid_mk1_belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/rapid-transport-belt-mk1.png",
+        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
         priority = "extra-high",
-        width = 64,
-        height = 64,
+        width = 128,
+        height = 128,
+        scale = 0.5,
         frame_count = 32,
-        direction_count = 20,
-        hr_version = {
-            filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5,
-            frame_count = 32,
-            direction_count = 20
-        }
+        direction_count = 20
     },
     east_index = 1,
     west_index = 2,
@@ -42,21 +34,13 @@ Belt.rapid_mk1_belt_animation_set = {
 
 Belt.rapid_mk2_belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/rapid-transport-belt-mk2.png",
+        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
         priority = "extra-high",
-        width = 64,
-        height = 64,
+        width = 128,
+        height = 128,
+        scale = 0.5,
         frame_count = 32,
-        direction_count = 20,
-        hr_version = {
-            filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
-            priority = "extra-high",
-            width = 128,
-            height = 128,
-            scale = 0.5,
-            frame_count = 32,
-            direction_count = 20
-        }
+        direction_count = 20
     },
     east_index = 1,
     west_index = 2,

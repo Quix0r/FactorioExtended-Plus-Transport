@@ -14,5 +14,6 @@ for _, direction in pairs({"north", "east", "south", "west"}) do
 end
 
 mk2.pictures.picture.sheets[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/storage-tank/hr-storage-tank.png"
+mk2.pictures.picture.sheets[1].height = 215
 
 data:extend({mk2})
