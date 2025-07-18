@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 18-07-2025
+  Feature:
+    - experimental support for MK2 valves added (higher flow rate)
+  Changes:
+    - moved out `constant.lua` to core
+    - introduced `prototypes/<item|recipe>__init__.lua` to mimic Python's __init__.py file
+    - removed filter-long-handed-inserter as all insertes can now filter items
+---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 12-05-2025
   Changes:

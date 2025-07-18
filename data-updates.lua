@@ -14,6 +14,17 @@ if not data.raw["pipe"]["pipe"].next_upgrade then
     data.raw["pipe"]["pipe"].next_upgrade = "pipe-mk2"
 end
 
+-- valves (optional)
+if mods["valves"] then
+    local constants = require("__valves__/constants")
+
+    for valve_type in pairs(constants.valve_types) do
+        if not data.raw["valve"]["valves-"..valve_type].next_upgrade then
+            data.raw["valve"]["valves-"..valve_type].next_upgrade = "valves-"..valve_type.."-mk2"
+        end
+    end
+end
+
 -- pipe-to-ground
 if not data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade then
     data.raw["pipe-to-ground"]["pipe-to-ground"].next_upgrade = "pipe-to-ground-mk2"

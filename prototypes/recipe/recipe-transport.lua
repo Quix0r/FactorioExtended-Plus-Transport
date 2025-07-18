@@ -40,18 +40,6 @@ data:extend(
   },
   {
     type = "recipe",
-    name = "filter-long-handed-inserter",
-    enabled = false,
-    ingredients =
-    {
-      {type="item", name="fast-long-handed-inserter", amount=1},
-      {type="item", name="fast-inserter", amount=1},
-      {type="item", name="steel-plate", amount=2}
-    },
-    results = {{type="item", name="filter-long-handed-inserter", amount=1}}
-  },
-  {
-    type = "recipe",
     name = "stack-inserter-mk2",
     enabled = false,
     ingredients =
@@ -78,7 +66,7 @@ data:extend(
     type = "recipe",
     name = "pipe-mk2",
     enabled = false,
-    ingredients = 
+    ingredients =
     {
       {type="item", name="titanium-alloy", amount=1}
     },
@@ -211,3 +199,25 @@ data:extend(
     results = {{type="item", name="rapid-splitter-mk2", amount=1}}
   }
 })
+
+if mods["valves"] then
+    local constants = require("__valves__.constants")
+
+    for valve_type in pairs(constants.valve_types) do
+        local name = "valves-"..valve_type.."-mk2"
+
+        data:extend({
+          {
+            type = "recipe",
+            name = name,
+            enabled = false,
+            ingredients =
+            {
+              {type="item", name="valves-"..valve_type, amount=2},
+              {type="item", name="titanium-alloy", amount=2}
+            },
+            results = {{type="item", name=name, amount=1}}
+          },
+        })
+    end
+end

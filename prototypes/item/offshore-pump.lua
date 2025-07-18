@@ -1,4 +1,4 @@
-local green_tint = {r = 0.4, g = 0.804, b = 0.667, a = 0.8}
+local Constant = require("__FactorioExtended-Plus-Core__/constant")
 
 local mk2 = table.deepcopy(data.raw.item["offshore-pump"])
 mk2.name = "offshore-pump-mk2"
@@ -10,7 +10,7 @@ mk2.icons = {
         icon = mk2.icon,
         icon_mipmaps = mk2.icon_mipmaps,
         icon_size = mk2.icon_size,
-        tint = green_tint
+        tint = Constant.green_tint
     }
 }
 

@@ -1,5 +1,4 @@
-local green_tint = {r = 0.4, g = 0.804, b = 0.667, a = 0.8}
-local blue_tint = {r = 0.690, g = 0.75, b = 1, a = 0.8}
+local Constant = require("__FactorioExtended-Plus-Core__/constant")
 
 data:extend(
     {
@@ -67,10 +66,6 @@ data:extend(
                     type = "unlock-recipe",
                     recipe = "rapid-splitter-mk2"
                 },
-                {
-                    type = "unlock-recipe",
-                    recipe = "filter-long-handed-inserter"
-                }
             },
             unit = {
                 count = 800,
@@ -221,7 +216,7 @@ data:extend(
             type = "technology",
             name = "automobilism-2",
             icon_size = 256,
-            icons = {{icon = "__base__/graphics/technology/automobilism.png", tint = green_tint}},
+            icons = {{icon = "__base__/graphics/technology/automobilism.png", tint = Constant.green_tint}},
             prerequisites = {"automobilism", "titanium-processing"},
             effects = {
                 {
@@ -244,7 +239,7 @@ data:extend(
             type = "technology",
             name = "automobilism-3",
             icon_size = 256,
-            icons = {{icon = "__base__/graphics/technology/automobilism.png", tint = blue_tint}},
+            icons = {{icon = "__base__/graphics/technology/automobilism.png", tint = Constant.blue_tint}},
             prerequisites = {"automobilism-2", "titanium-processing", "processing-unit"},
             effects = {
                 {
@@ -267,7 +262,7 @@ data:extend(
             type = "technology",
             name = "tanks-2",
             icon_size = 256,
-            icons = {{icon = "__base__/graphics/technology/tank.png", tint = green_tint}},
+            icons = {{icon = "__base__/graphics/technology/tank.png", tint = Constant.green_tint}},
             prerequisites = {"tank", "titanium-processing"},
             effects = {
                 {
@@ -291,7 +286,7 @@ data:extend(
             type = "technology",
             name = "tanks-3",
             icon_size = 256,
-            icons = {{icon = "__base__/graphics/technology/tank.png", tint = blue_tint}},
+            icons = {{icon = "__base__/graphics/technology/tank.png", tint = Constant.blue_tint}},
             prerequisites = {"tanks-2", "titanium-processing", "processing-unit"},
             effects = {
                 {
@@ -313,3 +308,14 @@ data:extend(
         }
     }
 )
+
+if mods["valves"] then
+    local constants = require("__valves__/constants")
+
+    for valve_type in pairs(constants.valve_types) do
+      table.insert(data.raw["technology"]["factorio-extended-fluid-handling"]["effects"], {
+          type = "unlock-recipe",
+          recipe = "valves-"..valve_type.."-mk2"
+      })
+    end
+end

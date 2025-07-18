@@ -1,4 +1,4 @@
-local Constant = require("constant")
+local Constant = require("__FactorioExtended-Plus-Core__/constant")
 
 data:extend(
     {

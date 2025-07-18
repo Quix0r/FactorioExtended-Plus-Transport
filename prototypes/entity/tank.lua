@@ -1,4 +1,4 @@
-local Constant = require("constant")
+local Constant = require("__FactorioExtended-Plus-Core__/constant")
 
 data.raw["car"]["tank"].equipment_grid = "car-small-equipment-grid"
 

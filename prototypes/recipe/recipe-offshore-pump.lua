@@ -1,4 +1,5 @@
 local mk2 = table.deepcopy(data.raw.recipe["offshore-pump"])
+
 mk2.name = "offshore-pump-mk2"
 mk2.enabled = false
 mk2.results = {{type="item", name=mk2.name, amount=1}}

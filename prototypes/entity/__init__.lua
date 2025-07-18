@@ -38,6 +38,10 @@ require("pipe")
 require("pipe-to-ground")
 require("storage-tank")
 
+if mods["valves"] then
+    require("valves")
+end
+
 require("splitter")
 require("underground-belt")
 require("transport-belt")
