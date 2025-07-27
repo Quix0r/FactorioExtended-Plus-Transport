@@ -201,10 +201,11 @@ data:extend(
 })
 
 if mods["valves"] then
-    local constants = require("__valves__.constants")
+    local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
-    for valve_type in pairs(constants.valve_types) do
-        local name = "valves-"..valve_type.."-mk2"
+    for valve_type, _ in pairs(valves) do
+        -- log(string.format("valve_type='%s' - Adding recipe ...", valve_type))
+        local name = valve_type.."-mk2"
 
         data:extend({
           {
@@ -213,7 +214,7 @@ if mods["valves"] then
             enabled = false,
             ingredients =
             {
-              {type="item", name="valves-"..valve_type, amount=2},
+              {type="item", name=valve_type, amount=2},
               {type="item", name="titanium-alloy", amount=2}
             },
             results = {{type="item", name=name, amount=1}}

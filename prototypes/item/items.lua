@@ -53,16 +53,15 @@ local items = {
 }
 
 if mods["valves"] then
-    local constants = require("__valves__.constants")
+    local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
-    for valve_type in pairs(constants.valve_types) do
-        local name = "valves-"..valve_type
-
+    for valve_type, _ in pairs(valves) do
+        -- log(string.format("valve_type='%s' - Adding item ...", valve_type))
         table.insert(items, {
-            source    = name,
-            name      = name.."-mk2",
+            source    = valve_type,
+            name      = valve_type.."-mk2",
             subgroup  = "fb-fluids",
-            order     = "b[pipe]-d["..name.."-mk2]",
+            order     = "b[pipe]-d["..valve_type.."-mk2]",
             icon_name = nil,
             itype     = "item",
             tint      = Constant.green_tint,

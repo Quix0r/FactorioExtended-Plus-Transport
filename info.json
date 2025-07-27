@@ -1,6 +1,6 @@
 {
     "name": "FactorioExtended-Plus-Transport",
-    "version": "2.0.5",
+    "version": "2.0.6",
     "factorio_version": "2.0",
     "title": "FactorioExtended Plus-Transport",
     "author": "roland77, rubesaca forked from jimmyjon711 (Original Author: Nath Gamer)",
@@ -11,6 +11,6 @@
         "FactorioExtended-Plus-Assets >= 0.0.1",
         "FactorioExtended-Plus-Core >= 2.0.6",
         "(?)LoaderRedux >= 2.0.0",
-        "(?)Valves >= 2.0.6"
+        "(?)Valves >= 2.1.0"
     ]
 }

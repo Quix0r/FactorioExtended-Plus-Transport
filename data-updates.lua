@@ -16,12 +16,19 @@ end
 
 -- valves (optional)
 if mods["valves"] then
-    local constants = require("__valves__/constants")
+    local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
-    for valve_type in pairs(constants.valve_types) do
-        if not data.raw["valve"]["valves-"..valve_type].next_upgrade then
-            data.raw["valve"]["valves-"..valve_type].next_upgrade = "valves-"..valve_type.."-mk2"
+    for valve_type, _ in pairs(valves) do
+        -- log(string.format("valve_type='%s' - Setting MK2 as next upgrade ...", valve_type))
+        if not data.raw["valve"][valve_type].next_upgrade then
+            data.raw["valve"][valve_type].next_upgrade = valve_type.."-mk2"
         end
+    end
+
+    for valve_type, _ in pairs(table.deepcopy(valves)) do
+        ---@cast valves table<string, data.ValvesModValveConfig>
+        -- log(string.format("valve_type='%s' - Adding valve for management ...", valve_type))
+        valves[valve_type.."-mk2"] = { name = valve_type.."-mk2" }
     end
 end
 

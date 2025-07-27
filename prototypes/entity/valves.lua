@@ -1,10 +1,12 @@
 local Constant = require("__FactorioExtended-Plus-Core__/constant")
-local valve_constants = require("__valves__/constants")
 
-for valve_type in pairs(valve_constants.valve_types) do
-    local mk2 = table.deepcopy(data.raw["valve"]["valves-"..valve_type])
+local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
-    mk2.name = "valves-"..valve_type.."-mk2"
+for valve_type, _ in pairs(valves) do
+    -- log(string.format("valve_type='%s' - Adding entity ...", valve_type))
+    local mk2 = table.deepcopy(data.raw["valve"][valve_type])
+
+    mk2.name = valve_type.."-mk2"
     mk2.minable.result = mk2.name
     mk2.max_health = 360
     mk2.icons = {{

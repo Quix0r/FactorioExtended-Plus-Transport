@@ -310,12 +310,13 @@ data:extend(
 )
 
 if mods["valves"] then
-    local constants = require("__valves__/constants")
+    local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
-    for valve_type in pairs(constants.valve_types) do
+    for valve_type, _ in pairs(valves) do
+      -- log(string.format("valve_type='%s' - Adding unlocked recipe ...", valve_type))
       table.insert(data.raw["technology"]["factorio-extended-fluid-handling"]["effects"], {
           type = "unlock-recipe",
-          recipe = "valves-"..valve_type.."-mk2"
+          recipe = valve_type.."-mk2"
       })
     end
 end
