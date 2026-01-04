@@ -3,7 +3,7 @@
 -- fluid_box.volume                             25k                                 50k
 --
 local Constant = require("__FactorioExtended-Plus-Core2__/constant")
-local core_utils = require("__Core2__/lualib/util")
+local core_utils = require("__core__/lualib/util")
 
 local mk2 = table.deepcopy(data.raw["storage-tank"]["storage-tank"])
 mk2.name = "storage-tank-mk2"

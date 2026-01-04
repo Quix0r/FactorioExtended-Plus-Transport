@@ -1,5 +1,5 @@
 local Constant = require("__FactorioExtended-Plus-Core2__/constant")
-local core_utils = require("__Core2__/lualib/util")
+local core_utils = require("__core__/lualib/util")
 
 local valves = data.raw["mod-data"]["mod-valves"].data.valves
 
