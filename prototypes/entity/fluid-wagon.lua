@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 -- locomotive                               mk1                                 mk2                                 mk3
 -- max_health                               600                                 1200                                1800
@@ -18,7 +18,7 @@ mk2.color = Constant.green_tint
 mk2.pictures.rotated.layers[1].tint = mk2.color
 mk2.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    -- @TODO: table.insert(mk2.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets__/transport/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO: table.insert(mk2.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets2__/transport/entity/" .. mk2.name .. "/hr-fluid-wagon-" .. i .. ".png")
     table.insert(mk2.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 
@@ -34,7 +34,7 @@ mk3.color = Constant.blue_tint
 mk3.pictures.rotated.layers[1].tint = mk3.color
 mk3.pictures.rotated.layers[1].filenames = {}
 for i = 1, 4 do
-    -- @TODO table.insert(mk3.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets__/transport/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
+    -- @TODO table.insert(mk3.pictures.rotated.layers[1].filenames, "__FactorioExtended-Plus-Assets2__/transport/entity/" .. mk3.name .. "/hr-fluid-wagon-" .. i .. ".png")
     table.insert(mk3.pictures.rotated.layers[1].filenames, "__base__/graphics/entity/fluid-wagon/fluid-wagon-" .. i .. ".png")
 end
 

@@ -9,7 +9,7 @@
 
 local fast = table.deepcopy(data.raw["inserter"]["long-handed-inserter"])
 fast.name = "fast-long-handed-inserter"
-fast.icon = "__FactorioExtended-Plus-Assets__/transport/icons/" .. fast.name .. ".png"
+fast.icon = "__FactorioExtended-Plus-Assets2__/transport/icons/" .. fast.name .. ".png"
 fast.icon_size = 64
 fast.icon_mipmaps = 4
 fast.minable.result = fast.name
@@ -20,6 +20,6 @@ fast.energy_source.drain = "0.45kW"
 fast.extension_speed = 0.10
 fast.rotation_speed = 0.07
 
-fast.platform_picture.sheet.filename = "__FactorioExtended-Plus-Assets__/transport/entity/fast-inserter-mk3/hr-fast-inserter-mk3-platform.png"
+fast.platform_picture.sheet.filename = "__FactorioExtended-Plus-Assets2__/transport/entity/fast-inserter-mk3/hr-fast-inserter-mk3-platform.png"
 
 data:extend({fast})

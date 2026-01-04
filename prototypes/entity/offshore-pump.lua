@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 -- offshore-pump                                mk1             mk2
 -- max_health                                   150             300

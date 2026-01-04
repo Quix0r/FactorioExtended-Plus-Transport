@@ -1,15 +1,15 @@
 {
-    "name": "FactorioExtended-Plus-Transport",
-    "version": "2.0.8",
+    "name": "FactorioExtended-Plus-Transport2",
+    "version": "2.0.10",
     "factorio_version": "2.0",
-    "title": "FactorioExtended Plus-Transport",
+    "title": "FactorioExtended Plus - Transport 2.0",
     "author": "roland77, rubesaca forked from jimmyjon711 (Original Author: Nath Gamer)",
     "contributers": "Cinjun, rgfirefly24, billbo99, Domanaik",
-    "description": "",
+    "description": "This mod ports the old FE+ mod to Factorio 2.0+. This mod contains transportation for the engineer (character), like higher tier cars, tanks. But it also includes belts, storage tanks, pipes (for transportation of items/liquids), pumps and inserters. Higher tiers means more storage capacity, higher throughput or fasrer inserter movement but at a higher cost of electricity.",
     "dependencies": [
         "base >= 2.0.72",
-        "FactorioExtended-Plus-Assets >= 0.0.3",
-        "FactorioExtended-Plus-Core >= 2.0.7",
+        "FactorioExtended-Plus-Assets2 >= 0.0.3",
+        "FactorioExtended-Plus-Core2 >= 2.0.7",
         "(?)LoaderRedux >= 2.0.0",
         "(?)Valves >= 2.1.0"
     ]

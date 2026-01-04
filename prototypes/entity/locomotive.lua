@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 -- locomotive                               mk1                                 mk2                                 mk3
 -- max_health                               1000                                2000                                3000

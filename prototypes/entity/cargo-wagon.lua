@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 -- cargo-wagon                              mk1                                 mk2                                 mk3
 -- max_health                               600                                 1200                                1800

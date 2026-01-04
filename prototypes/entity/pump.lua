@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 -- pump                                         mk1                                 mk2
 -- max_health                                   180                                 360
@@ -27,8 +27,8 @@ else
 end
 
 for _, direction in pairs({"north", "east", "south", "west"}) do
-    mk2.animations[direction].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pump/hr-pump-" .. direction .. ".png"
-    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Assets__/transport/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
+    mk2.animations[direction].filename = "__FactorioExtended-Plus-Assets2__/transport/entity/pump/hr-pump-" .. direction .. ".png"
+    mk2.fluid_box.pipe_covers[direction].layers[1].filename = "__FactorioExtended-Plus-Assets2__/transport/entity/pipe-covers/hr-pipe-cover-" .. direction .. ".png"
 end
 
 data:extend({mk2})

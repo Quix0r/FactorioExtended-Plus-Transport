@@ -2,7 +2,7 @@ local Belt = {}
 
 Belt.rapid_mk1_belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
+        filename = "__FactorioExtended-Plus-Assets2__/transport/entity/rapid-transport-mk1/hr-rapid-transport-belt-mk1.png",
         priority = "extra-high",
         width = 128,
         height = 128,
@@ -34,7 +34,7 @@ Belt.rapid_mk1_belt_animation_set = {
 
 Belt.rapid_mk2_belt_animation_set = {
     animation_set = {
-        filename = "__FactorioExtended-Plus-Assets__/transport/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
+        filename = "__FactorioExtended-Plus-Assets2__/transport/entity/rapid-transport-mk2/hr-rapid-transport-belt-mk2.png",
         priority = "extra-high",
         width = 128,
         height = 128,

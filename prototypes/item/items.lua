@@ -1,4 +1,4 @@
-local Constant = require("__FactorioExtended-Plus-Core__/constant")
+local Constant = require("__FactorioExtended-Plus-Core2__/constant")
 
 local function cloneWithTint(source)
     local item = table.deepcopy(data.raw[source.itype or "item"][source.source])
@@ -6,7 +6,7 @@ local function cloneWithTint(source)
     item.name = source.name
     item.place_result = item.name
     if source.icon_name then
-        item.icon = "__FactorioExtended-Plus-Assets__/transport/icons/"..source.icon_name
+        item.icon = "__FactorioExtended-Plus-Assets2__/transport/icons/"..source.icon_name
     end
     item.icons = {{
         icon         = item.icon,
